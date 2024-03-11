@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <style type="text/css">
+        .area{
+            width: 100%;
+            max-width: 1480px;
+            height: 1000px;
+            border: 1px solid red;
+            margin: auto;
+            box-shadow: 0 0 15px;
+            padding: 80px 20px 10px;
+        }
+        #area1{
+            background: url(/images/puckered.png) 50% 0 no-repeat fixed;
+        }
+        #area2{
+            background: url(/images/slide2.jpg) 50% 0 no-repeat fixed;
+        }
+        #area3{
+            background: url(/images/slide3.jpg) 50% 0 no-repeat fixed;
+        }
+        #area4{
+            background: url(/images/slide4.jpg) 50% 0 no-repeat fixed;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(10, 10, 236, 0.5);
+            position: fixed;
+            top: 0;
+            text-align: center;
+            line-height: 80px;
+        }
+        nav a{
+            color: aliceblue;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        footer a{
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: brown;
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+            position: fixed;
+            right: 5px;
+            bottom: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+     <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="#area1">BTN01</a>
+        <a href="#area2">BTN02</a>
+        <a href="#area3">BTN03</a>
+        <a href="#area4">BTN04</a>
+    </nav>
+    <!-- div>section#area$.area -->
+    <div>
+        <section id="area1" class="area"></section>
+        <section id="area2" class="area">
+            <a href="/images/examples/image-1.jpg" rel="lightbox[roadtrip]" title="因有寫js偵測所以可以寫圖片說明">
+                <img src="/images/examples/thumb-1.jpg" alt="縮圖一">
+            </a>
+            <a href="/images/examples/image-2.jpg" rel="lightbox[roadtrip]">
+                <img src="/images/examples/thumb-2.jpg" alt="縮圖二">
+            </a>
+            <a href="/images/examples/image-3.jpg" rel="lightbox[roadtrip]">
+                <img src="/images/examples/thumb-3.jpg" alt="縮圖三">
+            </a>
+        </section>
+        <section id="area3" class="area"></section>
+        <section id="area4" class="area">
+            <footer><a href="#area1" class="up">TOP</a></footer>
+        </section>
+    </div>
+</body>
+</html>
